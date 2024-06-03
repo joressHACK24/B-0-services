@@ -1,0 +1,275 @@
+.couleur{
+        background-color: #04697B, transparent; /* Superposition noire semi-transparente */
+      }
+.footer{
+        background: linear-gradient(90deg,rgba(0,158,222,1) 0%,rgba(120,184,45,1) 100%);
+        background-size: auto;
+        color: #fff;
+        background-size: 400% 400%;
+        animation: gradient 5s ease infinite;
+        padding: 25px 0;
+        border: 2px solid;
+        border-radius: 18px;
+}
+        @keyframes gradient{
+        0%{background-position:0 50%}
+        50%{background-position:100% 50%}
+        100%{background-position:0 50%}
+}
+
+.bloc2 {
+    background: -moz-linear-gradient(45deg, #02e1ba 0%, #26c9f2 29%, #047b4f 66%, white 100%);
+    background: -webkit-linear-gradient(45deg, #02e1ba 0%,#26c9f2 29%,blanc 66%,white 100%);
+    background: linear-gradient(45deg, #02e1ba 0%,white 29%,#26c9f2 66%,white 100%);
+    background-size: 700% 700%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    height: 600px;
+    text-align: center;
+    display: block;
+    align-items: center;
+}
+.bloc2::after::before, 
+.bloc2::after {
+    content: "";
+    width: 70vmax;
+    height: 70vmax;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.07);
+    left: -20vmin;
+    top: -20vmin;
+    animation: morph 15s linear infinite alternate, spin 20s linear infinite;
+    z-index: 1;
+    will-change: border-radius, transform;
+    transform-origin: 55% 55%;
+    pointer-events: none; 
+}
+.bloc2::after {
+    width: 70vmin;
+    height: 70vmin;
+    left: auto;
+    right: -10vmin;
+    top: auto;
+    bottom: 0;
+    animation: morph 10s linear infinite alternate, spin 26s linear infinite reverse;
+    transform-origin: 20% 20%; 
+}
+@-webkit-keyframes Gradient {
+    0% {background-position: 0 50%}
+    50% {background-position: 100% 50%}
+    100% {background-position: 0 50%}
+}
+@-moz-keyframes Gradient {
+    0% {background-position: 0 50%}
+    50% {background-position: 100% 50%}
+    100% {background-position: 0 50%}
+}
+@keyframes Gradient {
+    0% {background-position: 0 50%}
+    50% {background-position: 100% 50%}
+    100% {background-position: 0 50%}
+}
+@keyframes morph {
+  0% {border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;}
+  100% {border-radius: 40% 60%; } 
+}
+@keyframes spin {
+  to {transform: rotate(1turn);} 
+}
+
+
+.context {
+    width: 100%;
+    top:50vh;
+}
+.context h2{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+.area{
+    background: rgb(4, 105, 123,0.5);
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height:100vh;
+    border: 2px solid;
+    border-radius: 20px;
+    padding-top: 39px;
+}
+.circles{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.circles li{
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+}
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+.canvas {
+    background:#000;
+    width: 100%;
+    height: 100%;
+  }
+  .header {
+    position:relative;
+    text-align:center;
+    background: linear-gradient(60deg, rgba(4,105,123,1) 0%, rgb(255, 255, 255) 100%);
+    color:white;
+    border: 3px solid;
+    border-radius: 40px;
+  }
+  .inner-header {
+    height:65vh;
+    width:100%;
+    margin: 0;
+    padding: 0;
+  }
+  .flex { /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+  }
+  .content {
+    position:relative;
+    height:20vh;
+    text-align:center;
+    background-color: rgb(4, 105, 123);
+  }
+  /* Animation */
+  .parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+  }
+  .parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+  }
+  .parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+  }
+  .parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+  }
+  .parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+  }
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+  /*--- RESPONSIVE ---*/
+  @media (max-width: 768px) {
+    .waves {
+      height:40px;
+      min-height:40px;
+    }
+    .content {
+      height:30vh;
+    }
+    h1 {
+      font-size:24px;
+    }
+  }
+.card1{
+    background-image: url('images\4c-43-nettoyage-de-vitres.jpg')
+}

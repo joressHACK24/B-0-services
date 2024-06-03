@@ -1,0 +1,58 @@
+#titre{
+    padding-left: 1cm;
+    font-weight: bold;
+}
+.bloc2-1{
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1cm;
+    font-size: 0.6cm;
+    text-transform: uppercase;
+}
+.bloc2{
+        text-align: center;
+        margin: 0%;
+        padding: 0%;
+        height: 1600px;
+}
+.bloc3{
+    padding-top: 0;
+    
+}
+#bloc3-1{
+    
+    text-align: center;
+    margin: 0.5cm;
+    
+}
+.titre1{
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1cm;
+    font-size: 1cm;
+    text-transform: uppercase;
+}
+#i1{
+size: 0.1cm;
+}
+.card{
+    padding: 0cm;
+    margin: 0%;
+}
+
+.bloc4{
+    padding-top: 2cm;
+    
+}
+#couleurprincipale{
+    background-color: #04697B;
+    
+}
+.featurette{
+    background-image: linear-gradient(to right,#04697B, white);
+
+}
+#imagefeaturette{
+    clip-path: circle(50%);
+    border-radius: 50%;
+}
